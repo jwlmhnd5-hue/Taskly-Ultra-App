@@ -10,7 +10,9 @@ class SettingsScreen extends StatelessWidget {
         title: const Text('الإعدادات'),
         flexibleSpace: Container(
           decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [Color(0xFF1A237E), Color(0xFF3949AB)]),
+            gradient: LinearGradient(
+              colors: [Color(0xFF1A237E), Color(0xFF3949AB)],
+            ),
           ),
         ),
       ),
@@ -22,8 +24,8 @@ class SettingsScreen extends StatelessWidget {
             trailing: Switch(value: false, onChanged: (val) {}),
           ),
           const ListTile(
-            leading: const Icon(Icons.notifications_active_rounded),
-            title: const Text('التنبيهات الذكية'),
+            leading: Icon(Icons.notifications_active_rounded),
+            title: Text('التنبيهات الذكية'),
           ),
         ],
       ),
